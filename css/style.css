@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rojo: #F10100;
+    --primary: #530200;
+    --secondary: #D68329;
+    --third: #FFD700;
+    --negro: #000000;
+    --blanco: #ffffff;
+    --gris: #101010;
+}
+
+body {
+    background-image: url(../RE4R_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cabecera {
+    height: auto;
+    width: 100%;
+
+    background-color: var(--gris);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nombre-pagina{
+    flex: 3;
+    padding: 1rem;
+
+    text-align: center;
+    color: var(--blanco);
+}
+
+.titulo {
+    color: var(--rojo);
+}
+
+.navegacion {
+    flex: 7;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacion ul {
+    list-style: none;
+
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+}
+
+.navegacion ul a {
+    text-decoration: none;
+
+    font-size: 1.5rem;
+    color: var(--secondary);
+    transition: .5s;
+}
+
+.navegacion ul a:hover {
+    color: var(--rojo);
+
+    transition: .5s;
+}
+
+.cuerpo {
+    margin: 6rem;
+    padding: 2rem;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+
+    color: var(--blanco);
+    background-color: rgb(0, 0, 0, 0.95);
+    border-radius: 2rem;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.texto-inicio {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.subtitulo {
+    font-size: 3rem;
+    color: var(--rojo);
+}
+
+.texto {
+    font-size: 1.5rem;
+}
+
+.tabla {
+    border: var(--rojo) 2px solid;
+    border-collapse: collapse;
+}
+
+.tabla th {
+    border: var(--rojo) 2px solid;
+    padding: 1rem;
+
+    background-color: var(--primary);
+}
+
+.tabla td {
+    border: var(--rojo) 2px solid;
+    padding: 0.5rem;
+}
+
+.tabla td ul {
+    list-style: none;
+    color: var(--secondary)
+}
+
+.tabla .img-table {
+    padding: 0;
+}
+
+.letra-resaltada {
+    color: var(--third);
+    background-color: var(--gris);
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5rem;
+}
+
+.separador {
+    padding-bottom: 1rem;
+    margin-bottom: 2.5rem;
+    border-bottom: var(--third) 3px solid;
+}
+
+.personajes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    gap: 4rem;
+}
+
+.perfil {
+    background-color: var(--primary);
+    border: var(--third) solid 2px;
+    opacity: 0.5;
+    padding: 1rem;
+    transition: .5s;
+}
+
+.perfil:hover {
+    opacity: 1;
+    transition: .5s;
+}
+
+.perfil h4 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.perfil h4 a{
+    transition: .5s;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.perfil h4 a:hover {
+    color: var(--third);
+    transition: .5s;
+}
+
+.lista {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lista h4 {
+    font-size: 2rem;
+}
+
+.lista ul {
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contenedor h4 {
+    font-size: 2rem;
+}
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.imagenes img{
+    border: var(--third) solid 2px;
+    opacity: 0.8;
+    transition: .5s;
+}
+
+.imagenes img:hover {
+    opacity: 1;
+    scale: 2;
+    z-index: 2;
+    transition: .5s;
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.video {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.video h5{
+    color: var(--rojo);
+    font-size: 1.5rem;
+}
+
+.pie-pagina {
+    background-color: var(--gris);
+    color: var(--blanco);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pie-pagina h6 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.primera-parte {
+    display: flex;
+    gap: 5rem;
+    padding: 2rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+flex: 6;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info h3{
+    font-size: 2rem;
+}
+
+.info h3 b{
+    color: var(--rojo);
+}
+
+.info p {
+    color: var(--secondary);
+    font-size: 1.5rem;
+}
+
+.formulario {
+    flex: 4;
+    text-align: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: 2rem;
+    border-radius: 2rem;
+
+    background-color: #1d1d1d;
+}
+
+.formulario form h3{
+    color: var(--rojo);
+    font-size: 2rem;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    padding: 0 10%;
+    gap: 0.5rem;
+}
+
+.campos label {
+    font-size: 1.25rem
+}
+
+.campos input {
+    width: 100%;
+    height: 2rem;
+    padding: 1rem;
+
+    font-size: 1rem;
+
+    background-color: var(--negro);
+    color: var(--third);
+    border: var(--primary) solid 1px;
+    outline: var(--third);
+}
+
+.campos textarea {
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+
+    font-size: 1rem;
+
+    background-color: var(--negro);
+    color: var(--third);
+    border: var(--primary) solid 1px;
+    outline: var(--third);
+}
+
+.campos button {
+    width: 100%;
+    height: auto;
+    padding: 0.75rem;
+
+    font-size: 1rem;
+    font: bold;
+    color: var(--blanco);
+    cursor: pointer;
+
+    background-color: var(--primary);
+    border: var(--negro) solid 2px;
+    transition: .5s;
+}
+
+.campos button:hover {
+    background-color: var(--third);
+    color: var(--negro);
+
+    transition: .5s;
+}
