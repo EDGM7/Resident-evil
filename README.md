@@ -42,4 +42,4 @@ Haz push a la rama (git push origin feature/nueva-funcionalidad).
 Abre un Pull Request para revisar tus cambios.
 
 este proyecto fue realizado por los estudiantes de ingenieria de la UVM 
-Juan Gonzalez, Elias Guillen para la materia de diplomado competencia profesionales para ingenieros
+Juan Gonzalez, Elias Guillen para la materia de diplomado competencias profesionales para ingenieros
