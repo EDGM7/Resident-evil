@@ -1,3 +1,4 @@
+Wiki Resident Evil 4 (Remake) - README
 Este proyecto es una página web que actúa como una wiki para el videojuego Resident Evil 4 (Remake). Está diseñado para proporcionar información detallada sobre el juego, incluidos sus personajes, enemigos, armas y más. La página incluye secciones de navegación y una galería de imágenes y videos.
 
 Estructura del Proyecto
